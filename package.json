@@ -1,0 +1,33 @@
+{
+  "name": "liqd-json-rpc",
+  "description": "JSON RPC",
+  "version": "1.0.1",
+  "author": "radixxko",
+  "license": "MIT",
+  "main": "lib/json_rpc.js",
+  "files": [
+    "lib/"
+  ],
+  "scripts": {
+    "test": "nyc mocha",
+    "coverage": "nyc report --reporter=text-lcov | coveralls"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/radixxko/liqd-fs.git"
+  },
+  "keywords": [
+    "file",
+    "folder",
+    "liqd"
+  ],
+  "dependencies": {
+    "liqd-timed-promise": "^1.2.4",
+    "liqd-unique-id": "^1.0.3"
+  },
+  "devDependencies": {
+    "coveralls": "^3.0.4",
+    "mocha": "^5.0.4",
+    "nyc": "^14.1.1"
+  }
+}
